@@ -1,0 +1,375 @@
+2017-02-08 20:35:06.330  INFO 20324 --- [main] c.e.SpringBootAssignmentApplicationTests : Starting SpringBootAssignmentApplicationTests on LIN55000260 with PID 20324 (started by dhapandi in D:\CloudNative\Workspace_SpringBoot1.5.2\spring-boot-assignment)
+2017-02-08 20:35:06.332  INFO 20324 --- [main] c.e.SpringBootAssignmentApplicationTests : No active profile set, falling back to default profiles: default
+2017-02-08 20:35:06.372  INFO 20324 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@445b295b: startup date [Wed Feb 08 20:35:06 IST 2017]; root of context hierarchy
+2017-02-08 20:35:06.978  INFO 20324 --- [main] com.example.service.RestaurantService    : Total number of Dish: 5
+2017-02-08 20:35:06.980  INFO 20324 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-02-08 20:35:06.989 ERROR 20324 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) [spring-boot-test-autoconfigure-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: java.lang.ClassCastException: java.util.TreeSet cannot be cast to java.util.Map
+	at com.example.service.RestaurantService.getSatisfactionResult(RestaurantService.java:47) ~[classes/:na]
+	at com.example.SpringBootAssignmentApplication.run(SpringBootAssignmentApplication.java:30) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	... 33 common frames omitted
+
+2017-02-08 20:35:06.992  INFO 20324 --- [main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@445b295b: startup date [Wed Feb 08 20:35:06 IST 2017]; root of context hierarchy
+2017-02-08 20:35:07.054  INFO 20324 --- [main] c.e.SpringBootAssignmentApplicationTests : Starting SpringBootAssignmentApplicationTests on LIN55000260 with PID 20324 (started by dhapandi in D:\CloudNative\Workspace_SpringBoot1.5.2\spring-boot-assignment)
+2017-02-08 20:35:07.055  INFO 20324 --- [main] c.e.SpringBootAssignmentApplicationTests : No active profile set, falling back to default profiles: default
+2017-02-08 20:35:07.058  INFO 20324 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@42b02722: startup date [Wed Feb 08 20:35:07 IST 2017]; root of context hierarchy
+2017-02-08 20:35:07.268  INFO 20324 --- [main] com.example.service.RestaurantService    : Total number of Dish: 5
+2017-02-08 20:35:07.269  INFO 20324 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-02-08 20:35:07.273 ERROR 20324 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) [spring-boot-test-autoconfigure-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: java.lang.ClassCastException: java.util.TreeSet cannot be cast to java.util.Map
+	at com.example.service.RestaurantService.getSatisfactionResult(RestaurantService.java:47) ~[classes/:na]
+	at com.example.SpringBootAssignmentApplication.run(SpringBootAssignmentApplication.java:30) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	... 31 common frames omitted
+
+2017-02-08 20:35:07.276  INFO 20324 --- [main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@42b02722: startup date [Wed Feb 08 20:35:07 IST 2017]; root of context hierarchy
+2017-02-08 20:35:07.278 ERROR 20324 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@382db087] to prepare test instance [com.example.SpringBootAssignmentApplicationTests@de3a06f]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) ~[spring-boot-test-autoconfigure-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 25 common frames omitted
+Caused by: java.lang.ClassCastException: java.util.TreeSet cannot be cast to java.util.Map
+	at com.example.service.RestaurantService.getSatisfactionResult(RestaurantService.java:47) ~[classes/:na]
+	at com.example.SpringBootAssignmentApplication.run(SpringBootAssignmentApplication.java:30) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	... 31 common frames omitted
+
+2017-02-08 20:35:07.358  INFO 20324 --- [main] c.e.SpringBootAssignmentApplicationTests : Starting SpringBootAssignmentApplicationTests on LIN55000260 with PID 20324 (started by dhapandi in D:\CloudNative\Workspace_SpringBoot1.5.2\spring-boot-assignment)
+2017-02-08 20:35:07.359  INFO 20324 --- [main] c.e.SpringBootAssignmentApplicationTests : No active profile set, falling back to default profiles: default
+2017-02-08 20:35:07.361  INFO 20324 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@75cd8043: startup date [Wed Feb 08 20:35:07 IST 2017]; root of context hierarchy
+2017-02-08 20:35:07.546  INFO 20324 --- [main] com.example.service.RestaurantService    : Total number of Dish: 5
+2017-02-08 20:35:07.547  INFO 20324 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-02-08 20:35:07.552 ERROR 20324 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) [spring-boot-test-autoconfigure-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: java.lang.ClassCastException: java.util.TreeSet cannot be cast to java.util.Map
+	at com.example.service.RestaurantService.getSatisfactionResult(RestaurantService.java:47) ~[classes/:na]
+	at com.example.SpringBootAssignmentApplication.run(SpringBootAssignmentApplication.java:30) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	... 33 common frames omitted
+
+2017-02-08 20:35:07.554  INFO 20324 --- [main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@75cd8043: startup date [Wed Feb 08 20:35:07 IST 2017]; root of context hierarchy
+2017-02-08 20:35:07.626  INFO 20324 --- [main] c.e.SpringBootAssignmentApplicationTests : Starting SpringBootAssignmentApplicationTests on LIN55000260 with PID 20324 (started by dhapandi in D:\CloudNative\Workspace_SpringBoot1.5.2\spring-boot-assignment)
+2017-02-08 20:35:07.626  INFO 20324 --- [main] c.e.SpringBootAssignmentApplicationTests : No active profile set, falling back to default profiles: default
+2017-02-08 20:35:07.629  INFO 20324 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@43aaf813: startup date [Wed Feb 08 20:35:07 IST 2017]; root of context hierarchy
+2017-02-08 20:35:07.842  INFO 20324 --- [main] com.example.service.RestaurantService    : Total number of Dish: 5
+2017-02-08 20:35:07.844  INFO 20324 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-02-08 20:35:07.849 ERROR 20324 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) [spring-boot-test-autoconfigure-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: java.lang.ClassCastException: java.util.TreeSet cannot be cast to java.util.Map
+	at com.example.service.RestaurantService.getSatisfactionResult(RestaurantService.java:47) ~[classes/:na]
+	at com.example.SpringBootAssignmentApplication.run(SpringBootAssignmentApplication.java:30) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	... 31 common frames omitted
+
+2017-02-08 20:35:07.851  INFO 20324 --- [main] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@43aaf813: startup date [Wed Feb 08 20:35:07 IST 2017]; root of context hierarchy
+2017-02-08 20:35:07.852 ERROR 20324 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@382db087] to prepare test instance [com.example.SpringBootAssignmentApplicationTests@62ea3440]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) ~[spring-boot-test-autoconfigure-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 25 common frames omitted
+Caused by: java.lang.ClassCastException: java.util.TreeSet cannot be cast to java.util.Map
+	at com.example.service.RestaurantService.getSatisfactionResult(RestaurantService.java:47) ~[classes/:na]
+	at com.example.SpringBootAssignmentApplication.run(SpringBootAssignmentApplication.java:30) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	... 31 common frames omitted
+
+2017-02-08 20:44:10.682  INFO 19960 --- [main] c.e.SpringBootAssignmentApplicationTests : Starting SpringBootAssignmentApplicationTests on LIN55000260 with PID 19960 (started by dhapandi in D:\CloudNative\Workspace_SpringBoot1.5.2\spring-boot-assignment)
+2017-02-08 20:44:10.684  INFO 19960 --- [main] c.e.SpringBootAssignmentApplicationTests : No active profile set, falling back to default profiles: default
+2017-02-08 20:44:10.739  INFO 19960 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@445b295b: startup date [Wed Feb 08 20:44:10 IST 2017]; root of context hierarchy
+2017-02-08 20:44:11.276  INFO 19960 --- [main] com.example.service.RestaurantService    : Total number of Dish: 5
+2017-02-08 20:44:11.277  INFO 19960 --- [main] com.example.service.RestaurantService    : satisfactionAmount: 181282
+2017-02-08 20:44:11.279  INFO 19960 --- [main] com.example.service.RestaurantService    : satisfactionList: [[satisfactionAmount: 77924 ,timeTaken: 710 ,satisfaction: 109.75211], [satisfactionAmount: 50074 ,timeTaken: 659 ,satisfaction: 75.984825], [satisfactionAmount: 16808 ,timeTaken: 250 ,satisfaction: 67.232], [satisfactionAmount: 8931 ,timeTaken: 273 ,satisfaction: 32.714287], [satisfactionAmount: 27545 ,timeTaken: 879 ,satisfaction: 31.336746]]
+2017-02-08 20:44:11.280  INFO 19960 --- [main] c.e.SpringBootAssignmentApplicationTests : Started SpringBootAssignmentApplicationTests in 0.943 seconds (JVM running for 1.793)
+2017-02-08 20:44:11.334  INFO 19960 --- [main] com.example.service.RestaurantService    : Total number of Dish: 5
+2017-02-08 20:44:11.383  INFO 19960 --- [Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@445b295b: startup date [Wed Feb 08 20:44:10 IST 2017]; root of context hierarchy
+2017-02-08 20:44:48.841  INFO 19484 --- [main] c.e.SpringBootAssignmentApplicationTests : Starting SpringBootAssignmentApplicationTests on LIN55000260 with PID 19484 (started by dhapandi in D:\CloudNative\Workspace_SpringBoot1.5.2\spring-boot-assignment)
+2017-02-08 20:44:48.843  INFO 19484 --- [main] c.e.SpringBootAssignmentApplicationTests : No active profile set, falling back to default profiles: default
+2017-02-08 20:44:48.895  INFO 19484 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@445b295b: startup date [Wed Feb 08 20:44:48 IST 2017]; root of context hierarchy
+2017-02-08 20:44:49.421  INFO 19484 --- [main] com.example.service.RestaurantService    : Total number of Dish: 5
+2017-02-08 20:44:49.422  INFO 19484 --- [main] com.example.service.RestaurantService    : satisfactionAmount: 181282
+2017-02-08 20:44:49.424  INFO 19484 --- [main] com.example.service.RestaurantService    : satisfactionList: [[satisfactionAmount: 77924 ,timeTaken: 710 ,satisfaction: 109.75211], [satisfactionAmount: 50074 ,timeTaken: 659 ,satisfaction: 75.984825], [satisfactionAmount: 16808 ,timeTaken: 250 ,satisfaction: 67.232], [satisfactionAmount: 8931 ,timeTaken: 273 ,satisfaction: 32.714287], [satisfactionAmount: 27545 ,timeTaken: 879 ,satisfaction: 31.336746]]
+2017-02-08 20:44:49.426  INFO 19484 --- [main] c.e.SpringBootAssignmentApplicationTests : Started SpringBootAssignmentApplicationTests in 0.916 seconds (JVM running for 1.739)
+2017-02-08 20:44:49.472  INFO 19484 --- [main] com.example.service.RestaurantService    : Total number of Dish: 5
+2017-02-08 20:44:49.523  INFO 19484 --- [Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@445b295b: startup date [Wed Feb 08 20:44:48 IST 2017]; root of context hierarchy
+2017-02-08 20:45:16.985  INFO 17552 --- [main] c.e.SpringBootAssignmentApplicationTests : Starting SpringBootAssignmentApplicationTests on LIN55000260 with PID 17552 (started by dhapandi in D:\CloudNative\Workspace_SpringBoot1.5.2\spring-boot-assignment)
+2017-02-08 20:45:16.987  INFO 17552 --- [main] c.e.SpringBootAssignmentApplicationTests : No active profile set, falling back to default profiles: default
+2017-02-08 20:45:17.023  INFO 17552 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1757cd72: startup date [Wed Feb 08 20:45:17 IST 2017]; root of context hierarchy
+2017-02-08 20:45:17.565  INFO 17552 --- [main] com.example.service.RestaurantService    : Total number of Dish: 5
+2017-02-08 20:45:17.565  INFO 17552 --- [main] com.example.service.RestaurantService    : satisfactionAmount: 181282
+2017-02-08 20:45:17.567  INFO 17552 --- [main] com.example.service.RestaurantService    : satisfactionList: [[satisfactionAmount: 77924 ,timeTaken: 710 ,satisfaction: 109.75211], [satisfactionAmount: 50074 ,timeTaken: 659 ,satisfaction: 75.984825], [satisfactionAmount: 16808 ,timeTaken: 250 ,satisfaction: 67.232], [satisfactionAmount: 8931 ,timeTaken: 273 ,satisfaction: 32.714287], [satisfactionAmount: 27545 ,timeTaken: 879 ,satisfaction: 31.336746]]
+2017-02-08 20:45:17.568  INFO 17552 --- [main] c.e.SpringBootAssignmentApplicationTests : Started SpringBootAssignmentApplicationTests in 0.942 seconds (JVM running for 1.771)
+2017-02-08 20:45:17.617  INFO 17552 --- [Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1757cd72: startup date [Wed Feb 08 20:45:17 IST 2017]; root of context hierarchy
+2017-02-08 20:45:27.113  INFO 11700 --- [main] c.e.SpringBootAssignmentApplication      : Starting SpringBootAssignmentApplication on LIN55000260 with PID 11700 (D:\CloudNative\Workspace_SpringBoot1.5.2\spring-boot-assignment\target\classes started by dhapandi in D:\CloudNative\Workspace_SpringBoot1.5.2\spring-boot-assignment)
+2017-02-08 20:45:27.117  INFO 11700 --- [main] c.e.SpringBootAssignmentApplication      : No active profile set, falling back to default profiles: default
+2017-02-08 20:45:27.187  INFO 11700 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@146044d7: startup date [Wed Feb 08 20:45:27 IST 2017]; root of context hierarchy
+2017-02-08 20:45:27.753  INFO 11700 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-02-08 20:45:27.772  INFO 11700 --- [main] com.example.service.RestaurantService    : Total number of Dish: 5
+2017-02-08 20:45:27.773  INFO 11700 --- [main] com.example.service.RestaurantService    : satisfactionAmount: 181282
+2017-02-08 20:45:27.774  INFO 11700 --- [main] com.example.service.RestaurantService    : satisfactionList: [[satisfactionAmount: 77924 ,timeTaken: 710 ,satisfaction: 109.75211], [satisfactionAmount: 50074 ,timeTaken: 659 ,satisfaction: 75.984825], [satisfactionAmount: 16808 ,timeTaken: 250 ,satisfaction: 67.232], [satisfactionAmount: 8931 ,timeTaken: 273 ,satisfaction: 32.714287], [satisfactionAmount: 27545 ,timeTaken: 879 ,satisfaction: 31.336746]]
+2017-02-08 20:45:27.776  INFO 11700 --- [main] c.e.SpringBootAssignmentApplication      : Started SpringBootAssignmentApplication in 1.03 seconds (JVM running for 1.839)
+2017-02-08 20:45:27.777  INFO 11700 --- [Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@146044d7: startup date [Wed Feb 08 20:45:27 IST 2017]; root of context hierarchy
+2017-02-08 20:45:27.779  INFO 11700 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-02-08 21:00:46.406  INFO 18216 --- [main] c.e.SpringBootAssignmentApplicationTests : Starting SpringBootAssignmentApplicationTests on LIN55000260 with PID 18216 (started by dhapandi in D:\CloudNative\Workspace_SpringBoot1.5.2\spring-boot-assignment)
+2017-02-08 21:00:46.406  INFO 18216 --- [main] c.e.SpringBootAssignmentApplicationTests : No active profile set, falling back to default profiles: default
+2017-02-08 21:00:46.437  INFO 18216 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4802796d: startup date [Wed Feb 08 21:00:46 IST 2017]; root of context hierarchy
+2017-02-08 21:00:47.001  INFO 18216 --- [main] com.example.service.RestaurantService    : Total number of Dish: 100
+2017-02-08 21:00:47.001  INFO 18216 --- [main] com.example.service.RestaurantService    : OUTPUT satisfactionAmount: 2490901
+2017-02-08 21:00:47.001  INFO 18216 --- [main] com.example.service.RestaurantService    : INPUT totalTimeTakenForDish: 61
+2017-02-08 21:00:47.001  INFO 18216 --- [main] com.example.service.RestaurantService    : LIST OF SELECTED DISH : [[satisfactionAmount: 37336 ,timeTaken: 7 ,satisfaction: 5333.7144], [satisfactionAmount: 41595 ,timeTaken: 9 ,satisfaction: 4621.6665], [satisfactionAmount: 46043 ,timeTaken: 12 ,satisfaction: 3836.9167], [satisfactionAmount: 28636 ,timeTaken: 14 ,satisfaction: 2045.4286], [satisfactionAmount: 84493 ,timeTaken: 43 ,satisfaction: 1964.9535], [satisfactionAmount: 28550 ,timeTaken: 25 ,satisfaction: 1142.0], [satisfactionAmount: 97973 ,timeTaken: 99 ,satisfaction: 989.6263], [satisfactionAmount: 82189 ,timeTaken: 124 ,satisfaction: 662.8145], [satisfactionAmount: 80980 ,timeTaken: 150 ,satisfaction: 539.86664], [satisfactionAmount: 88125 ,timeTaken: 197 ,satisfaction: 447.33502], [satisfactionAmount: 97386 ,timeTaken: 218 ,satisfaction: 446.72476], [satisfactionAmount: 64441 ,timeTaken: 166 ,satisfaction: 388.1988], [satisfactionAmount: 48906 ,timeTaken: 127 ,satisfaction: 385.0866], [satisfactionAmount: 54439 ,timeTaken: 145 ,satisfaction: 375.44138], [satisfactionAmount: 83455 ,timeTaken: 224 ,satisfaction: 372.56696], [satisfactionAmount: 35239 ,timeTaken: 95 ,satisfaction: 370.93683], [satisfactionAmount: 54680 ,timeTaken: 153 ,satisfaction: 357.38562], [satisfactionAmount: 59746 ,timeTaken: 176 ,satisfaction: 339.4659], [satisfactionAmount: 93100 ,timeTaken: 279 ,satisfaction: 333.69174], [satisfactionAmount: 25229 ,timeTaken: 92 ,satisfaction: 274.22827], [satisfactionAmount: 97943 ,timeTaken: 366 ,satisfaction: 267.60382], [satisfactionAmount: 44304 ,timeTaken: 170 ,satisfaction: 260.61176], [satisfactionAmount: 99248 ,timeTaken: 386 ,satisfaction: 257.11917], [satisfactionAmount: 14739 ,timeTaken: 58 ,satisfaction: 254.1207], [satisfactionAmount: 24116 ,timeTaken: 95 ,satisfaction: 253.85263], [satisfactionAmount: 98143 ,timeTaken: 400 ,satisfaction: 245.3575], [satisfactionAmount: 46518 ,timeTaken: 196 ,satisfaction: 237.33673], [satisfactionAmount: 36551 ,timeTaken: 160 ,satisfaction: 228.44376], [satisfactionAmount: 35002 ,timeTaken: 154 ,satisfaction: 227.28572], [satisfactionAmount: 53636 ,timeTaken: 299 ,satisfaction: 179.38461], [satisfactionAmount: 95273 ,timeTaken: 540 ,satisfaction: 176.43149], [satisfactionAmount: 51817 ,timeTaken: 336 ,satisfaction: 154.21725], [satisfactionAmount: 49096 ,timeTaken: 320 ,satisfaction: 153.425], [satisfactionAmount: 75630 ,timeTaken: 502 ,satisfaction: 150.65736], [satisfactionAmount: 53178 ,timeTaken: 398 ,satisfaction: 133.61307], [satisfactionAmount: 78841 ,timeTaken: 613 ,satisfaction: 128.615], [satisfactionAmount: 85696 ,timeTaken: 713 ,satisfaction: 120.19074], [satisfactionAmount: 99098 ,timeTaken: 827 ,satisfaction: 119.82829], [satisfactionAmount: 61626 ,timeTaken: 535 ,satisfaction: 115.18878], [satisfactionAmount: 40195 ,timeTaken: 358 ,satisfaction: 112.276535], [satisfactionAmount: 17710 ,timeTaken: 158 ,satisfaction: 112.08861]]
+2017-02-08 21:00:47.001  INFO 18216 --- [main] c.e.SpringBootAssignmentApplicationTests : Started SpringBootAssignmentApplicationTests in 1.001 seconds (JVM running for 1.95)
+2017-02-08 21:00:47.049  INFO 18216 --- [main] com.example.service.RestaurantService    : Total number of Dish: 100
+2017-02-08 21:00:47.064  INFO 18216 --- [Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4802796d: startup date [Wed Feb 08 21:00:46 IST 2017]; root of context hierarchy
+2017-02-08 21:01:53.191  INFO 16844 --- [main] c.e.SpringBootAssignmentApplicationTests : Starting SpringBootAssignmentApplicationTests on LIN55000260 with PID 16844 (started by dhapandi in D:\CloudNative\Workspace_SpringBoot1.5.2\spring-boot-assignment)
+2017-02-08 21:01:53.206  INFO 16844 --- [main] c.e.SpringBootAssignmentApplicationTests : No active profile set, falling back to default profiles: default
+2017-02-08 21:01:53.237  INFO 16844 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4802796d: startup date [Wed Feb 08 21:01:53 IST 2017]; root of context hierarchy
+2017-02-08 21:01:53.737  INFO 16844 --- [main] com.example.service.RestaurantService    : Total number of Dish: 100
+2017-02-08 21:01:53.737  INFO 16844 --- [main] com.example.service.RestaurantService    : OUTPUT satisfactionAmount: 2490901
+2017-02-08 21:01:53.737  INFO 16844 --- [main] com.example.service.RestaurantService    : INPUT totalTimeTakenForDish: 61
+2017-02-08 21:01:53.737  INFO 16844 --- [main] com.example.service.RestaurantService    : LIST OF SELECTED DISH : [[satisfactionAmount: 37336 ,timeTaken: 7 ,satisfaction: 5333.7144], [satisfactionAmount: 41595 ,timeTaken: 9 ,satisfaction: 4621.6665], [satisfactionAmount: 46043 ,timeTaken: 12 ,satisfaction: 3836.9167], [satisfactionAmount: 28636 ,timeTaken: 14 ,satisfaction: 2045.4286], [satisfactionAmount: 84493 ,timeTaken: 43 ,satisfaction: 1964.9535], [satisfactionAmount: 28550 ,timeTaken: 25 ,satisfaction: 1142.0], [satisfactionAmount: 97973 ,timeTaken: 99 ,satisfaction: 989.6263], [satisfactionAmount: 82189 ,timeTaken: 124 ,satisfaction: 662.8145], [satisfactionAmount: 80980 ,timeTaken: 150 ,satisfaction: 539.86664], [satisfactionAmount: 88125 ,timeTaken: 197 ,satisfaction: 447.33502], [satisfactionAmount: 97386 ,timeTaken: 218 ,satisfaction: 446.72476], [satisfactionAmount: 64441 ,timeTaken: 166 ,satisfaction: 388.1988], [satisfactionAmount: 48906 ,timeTaken: 127 ,satisfaction: 385.0866], [satisfactionAmount: 54439 ,timeTaken: 145 ,satisfaction: 375.44138], [satisfactionAmount: 83455 ,timeTaken: 224 ,satisfaction: 372.56696], [satisfactionAmount: 35239 ,timeTaken: 95 ,satisfaction: 370.93683], [satisfactionAmount: 54680 ,timeTaken: 153 ,satisfaction: 357.38562], [satisfactionAmount: 59746 ,timeTaken: 176 ,satisfaction: 339.4659], [satisfactionAmount: 93100 ,timeTaken: 279 ,satisfaction: 333.69174], [satisfactionAmount: 25229 ,timeTaken: 92 ,satisfaction: 274.22827], [satisfactionAmount: 97943 ,timeTaken: 366 ,satisfaction: 267.60382], [satisfactionAmount: 44304 ,timeTaken: 170 ,satisfaction: 260.61176], [satisfactionAmount: 99248 ,timeTaken: 386 ,satisfaction: 257.11917], [satisfactionAmount: 14739 ,timeTaken: 58 ,satisfaction: 254.1207], [satisfactionAmount: 24116 ,timeTaken: 95 ,satisfaction: 253.85263], [satisfactionAmount: 98143 ,timeTaken: 400 ,satisfaction: 245.3575], [satisfactionAmount: 46518 ,timeTaken: 196 ,satisfaction: 237.33673], [satisfactionAmount: 36551 ,timeTaken: 160 ,satisfaction: 228.44376], [satisfactionAmount: 35002 ,timeTaken: 154 ,satisfaction: 227.28572], [satisfactionAmount: 53636 ,timeTaken: 299 ,satisfaction: 179.38461], [satisfactionAmount: 95273 ,timeTaken: 540 ,satisfaction: 176.43149], [satisfactionAmount: 51817 ,timeTaken: 336 ,satisfaction: 154.21725], [satisfactionAmount: 49096 ,timeTaken: 320 ,satisfaction: 153.425], [satisfactionAmount: 75630 ,timeTaken: 502 ,satisfaction: 150.65736], [satisfactionAmount: 53178 ,timeTaken: 398 ,satisfaction: 133.61307], [satisfactionAmount: 78841 ,timeTaken: 613 ,satisfaction: 128.615], [satisfactionAmount: 85696 ,timeTaken: 713 ,satisfaction: 120.19074], [satisfactionAmount: 99098 ,timeTaken: 827 ,satisfaction: 119.82829], [satisfactionAmount: 61626 ,timeTaken: 535 ,satisfaction: 115.18878], [satisfactionAmount: 40195 ,timeTaken: 358 ,satisfaction: 112.276535], [satisfactionAmount: 17710 ,timeTaken: 158 ,satisfaction: 112.08861]]
+2017-02-08 21:01:53.737  INFO 16844 --- [main] c.e.SpringBootAssignmentApplicationTests : Started SpringBootAssignmentApplicationTests in 0.921 seconds (JVM running for 1.904)
+2017-02-08 21:01:53.784  INFO 16844 --- [main] com.example.service.RestaurantService    : Total number of Dish: 100
+2017-02-08 21:01:53.831  INFO 16844 --- [Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4802796d: startup date [Wed Feb 08 21:01:53 IST 2017]; root of context hierarchy
+2017-02-08 21:09:22.697  INFO 19476 --- [main] c.e.SpringBootAssignmentApplicationTests : Starting SpringBootAssignmentApplicationTests on LIN55000260 with PID 19476 (started by dhapandi in D:\CloudNative\Workspace_SpringBoot1.5.2\spring-boot-assignment)
+2017-02-08 21:09:22.697  INFO 19476 --- [main] c.e.SpringBootAssignmentApplicationTests : No active profile set, falling back to default profiles: default
+2017-02-08 21:09:22.744  INFO 19476 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@445b295b: startup date [Wed Feb 08 21:09:22 IST 2017]; root of context hierarchy
+2017-02-08 21:09:23.274  INFO 19476 --- [main] com.example.service.RestaurantService    : Total number of Dish: 100
+2017-02-08 21:09:23.274  INFO 19476 --- [main] com.example.service.RestaurantService    : OUTPUT satisfactionAmount: 2490901
+2017-02-08 21:09:23.274  INFO 19476 --- [main] com.example.service.RestaurantService    : INPUT totalTimeTakenForDish: 61
+2017-02-08 21:09:23.274  INFO 19476 --- [main] com.example.service.RestaurantService    : LIST OF SELECTED DISH : [[satisfactionAmount: 37336 ,timeTaken: 7 ,satisfaction: 5333.7144], [satisfactionAmount: 41595 ,timeTaken: 9 ,satisfaction: 4621.6665], [satisfactionAmount: 46043 ,timeTaken: 12 ,satisfaction: 3836.9167], [satisfactionAmount: 28636 ,timeTaken: 14 ,satisfaction: 2045.4286], [satisfactionAmount: 84493 ,timeTaken: 43 ,satisfaction: 1964.9535], [satisfactionAmount: 28550 ,timeTaken: 25 ,satisfaction: 1142.0], [satisfactionAmount: 97973 ,timeTaken: 99 ,satisfaction: 989.6263], [satisfactionAmount: 82189 ,timeTaken: 124 ,satisfaction: 662.8145], [satisfactionAmount: 80980 ,timeTaken: 150 ,satisfaction: 539.86664], [satisfactionAmount: 88125 ,timeTaken: 197 ,satisfaction: 447.33502], [satisfactionAmount: 97386 ,timeTaken: 218 ,satisfaction: 446.72476], [satisfactionAmount: 64441 ,timeTaken: 166 ,satisfaction: 388.1988], [satisfactionAmount: 48906 ,timeTaken: 127 ,satisfaction: 385.0866], [satisfactionAmount: 54439 ,timeTaken: 145 ,satisfaction: 375.44138], [satisfactionAmount: 83455 ,timeTaken: 224 ,satisfaction: 372.56696], [satisfactionAmount: 35239 ,timeTaken: 95 ,satisfaction: 370.93683], [satisfactionAmount: 54680 ,timeTaken: 153 ,satisfaction: 357.38562], [satisfactionAmount: 59746 ,timeTaken: 176 ,satisfaction: 339.4659], [satisfactionAmount: 93100 ,timeTaken: 279 ,satisfaction: 333.69174], [satisfactionAmount: 25229 ,timeTaken: 92 ,satisfaction: 274.22827], [satisfactionAmount: 97943 ,timeTaken: 366 ,satisfaction: 267.60382], [satisfactionAmount: 44304 ,timeTaken: 170 ,satisfaction: 260.61176], [satisfactionAmount: 99248 ,timeTaken: 386 ,satisfaction: 257.11917], [satisfactionAmount: 14739 ,timeTaken: 58 ,satisfaction: 254.1207], [satisfactionAmount: 24116 ,timeTaken: 95 ,satisfaction: 253.85263], [satisfactionAmount: 98143 ,timeTaken: 400 ,satisfaction: 245.3575], [satisfactionAmount: 46518 ,timeTaken: 196 ,satisfaction: 237.33673], [satisfactionAmount: 36551 ,timeTaken: 160 ,satisfaction: 228.44376], [satisfactionAmount: 35002 ,timeTaken: 154 ,satisfaction: 227.28572], [satisfactionAmount: 53636 ,timeTaken: 299 ,satisfaction: 179.38461], [satisfactionAmount: 95273 ,timeTaken: 540 ,satisfaction: 176.43149], [satisfactionAmount: 51817 ,timeTaken: 336 ,satisfaction: 154.21725], [satisfactionAmount: 49096 ,timeTaken: 320 ,satisfaction: 153.425], [satisfactionAmount: 75630 ,timeTaken: 502 ,satisfaction: 150.65736], [satisfactionAmount: 53178 ,timeTaken: 398 ,satisfaction: 133.61307], [satisfactionAmount: 78841 ,timeTaken: 613 ,satisfaction: 128.615], [satisfactionAmount: 85696 ,timeTaken: 713 ,satisfaction: 120.19074], [satisfactionAmount: 99098 ,timeTaken: 827 ,satisfaction: 119.82829], [satisfactionAmount: 61626 ,timeTaken: 535 ,satisfaction: 115.18878], [satisfactionAmount: 40195 ,timeTaken: 358 ,satisfaction: 112.276535], [satisfactionAmount: 17710 ,timeTaken: 158 ,satisfaction: 112.08861]]
+2017-02-08 21:09:23.274  INFO 19476 --- [main] c.e.SpringBootAssignmentApplicationTests : Started SpringBootAssignmentApplicationTests in 0.905 seconds (JVM running for 1.773)
+2017-02-08 21:09:23.322  INFO 19476 --- [main] com.example.service.RestaurantService    : Total number of Dish: 100
+2017-02-08 21:09:23.353  INFO 19476 --- [Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@445b295b: startup date [Wed Feb 08 21:09:22 IST 2017]; root of context hierarchy
+2017-02-08 21:09:32.515  INFO 17784 --- [main] c.e.SpringBootAssignmentApplication      : Starting SpringBootAssignmentApplication on LIN55000260 with PID 17784 (D:\CloudNative\Workspace_SpringBoot1.5.2\spring-boot-assignment\target\classes started by dhapandi in D:\CloudNative\Workspace_SpringBoot1.5.2\spring-boot-assignment)
+2017-02-08 21:09:32.515  INFO 17784 --- [main] c.e.SpringBootAssignmentApplication      : No active profile set, falling back to default profiles: default
+2017-02-08 21:09:32.578  INFO 17784 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@146044d7: startup date [Wed Feb 08 21:09:32 IST 2017]; root of context hierarchy
+2017-02-08 21:09:33.139  INFO 17784 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-02-08 21:09:33.170  INFO 17784 --- [main] com.example.service.RestaurantService    : Total number of Dish: 100
+2017-02-08 21:09:33.170  INFO 17784 --- [main] com.example.service.RestaurantService    : OUTPUT satisfactionAmount: 2490901
+2017-02-08 21:09:33.170  INFO 17784 --- [main] com.example.service.RestaurantService    : INPUT totalTimeTakenForDish: 61
+2017-02-08 21:09:33.170  INFO 17784 --- [main] com.example.service.RestaurantService    : LIST OF SELECTED DISH : [[satisfactionAmount: 37336 ,timeTaken: 7 ,satisfaction: 5333.7144], [satisfactionAmount: 41595 ,timeTaken: 9 ,satisfaction: 4621.6665], [satisfactionAmount: 46043 ,timeTaken: 12 ,satisfaction: 3836.9167], [satisfactionAmount: 28636 ,timeTaken: 14 ,satisfaction: 2045.4286], [satisfactionAmount: 84493 ,timeTaken: 43 ,satisfaction: 1964.9535], [satisfactionAmount: 28550 ,timeTaken: 25 ,satisfaction: 1142.0], [satisfactionAmount: 97973 ,timeTaken: 99 ,satisfaction: 989.6263], [satisfactionAmount: 82189 ,timeTaken: 124 ,satisfaction: 662.8145], [satisfactionAmount: 80980 ,timeTaken: 150 ,satisfaction: 539.86664], [satisfactionAmount: 88125 ,timeTaken: 197 ,satisfaction: 447.33502], [satisfactionAmount: 97386 ,timeTaken: 218 ,satisfaction: 446.72476], [satisfactionAmount: 64441 ,timeTaken: 166 ,satisfaction: 388.1988], [satisfactionAmount: 48906 ,timeTaken: 127 ,satisfaction: 385.0866], [satisfactionAmount: 54439 ,timeTaken: 145 ,satisfaction: 375.44138], [satisfactionAmount: 83455 ,timeTaken: 224 ,satisfaction: 372.56696], [satisfactionAmount: 35239 ,timeTaken: 95 ,satisfaction: 370.93683], [satisfactionAmount: 54680 ,timeTaken: 153 ,satisfaction: 357.38562], [satisfactionAmount: 59746 ,timeTaken: 176 ,satisfaction: 339.4659], [satisfactionAmount: 93100 ,timeTaken: 279 ,satisfaction: 333.69174], [satisfactionAmount: 25229 ,timeTaken: 92 ,satisfaction: 274.22827], [satisfactionAmount: 97943 ,timeTaken: 366 ,satisfaction: 267.60382], [satisfactionAmount: 44304 ,timeTaken: 170 ,satisfaction: 260.61176], [satisfactionAmount: 99248 ,timeTaken: 386 ,satisfaction: 257.11917], [satisfactionAmount: 14739 ,timeTaken: 58 ,satisfaction: 254.1207], [satisfactionAmount: 24116 ,timeTaken: 95 ,satisfaction: 253.85263], [satisfactionAmount: 98143 ,timeTaken: 400 ,satisfaction: 245.3575], [satisfactionAmount: 46518 ,timeTaken: 196 ,satisfaction: 237.33673], [satisfactionAmount: 36551 ,timeTaken: 160 ,satisfaction: 228.44376], [satisfactionAmount: 35002 ,timeTaken: 154 ,satisfaction: 227.28572], [satisfactionAmount: 53636 ,timeTaken: 299 ,satisfaction: 179.38461], [satisfactionAmount: 95273 ,timeTaken: 540 ,satisfaction: 176.43149], [satisfactionAmount: 51817 ,timeTaken: 336 ,satisfaction: 154.21725], [satisfactionAmount: 49096 ,timeTaken: 320 ,satisfaction: 153.425], [satisfactionAmount: 75630 ,timeTaken: 502 ,satisfaction: 150.65736], [satisfactionAmount: 53178 ,timeTaken: 398 ,satisfaction: 133.61307], [satisfactionAmount: 78841 ,timeTaken: 613 ,satisfaction: 128.615], [satisfactionAmount: 85696 ,timeTaken: 713 ,satisfaction: 120.19074], [satisfactionAmount: 99098 ,timeTaken: 827 ,satisfaction: 119.82829], [satisfactionAmount: 61626 ,timeTaken: 535 ,satisfaction: 115.18878], [satisfactionAmount: 40195 ,timeTaken: 358 ,satisfaction: 112.276535], [satisfactionAmount: 17710 ,timeTaken: 158 ,satisfaction: 112.08861]]
+2017-02-08 21:09:33.170  INFO 17784 --- [main] c.e.SpringBootAssignmentApplication      : Started SpringBootAssignmentApplication in 1.061 seconds (JVM running for 1.914)
+2017-02-08 21:09:33.170  INFO 17784 --- [Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@146044d7: startup date [Wed Feb 08 21:09:32 IST 2017]; root of context hierarchy
+2017-02-08 21:09:33.170  INFO 17784 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-02-08 21:11:24.997  INFO 19088 --- [main] c.e.SpringBootAssignmentApplicationTests : Starting SpringBootAssignmentApplicationTests on LIN55000260 with PID 19088 (started by dhapandi in D:\CloudNative\Workspace_SpringBoot1.5.2\spring-boot-assignment)
+2017-02-08 21:11:24.997  INFO 19088 --- [main] c.e.SpringBootAssignmentApplicationTests : No active profile set, falling back to default profiles: default
+2017-02-08 21:11:25.028  INFO 19088 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@59474f18: startup date [Wed Feb 08 21:11:25 IST 2017]; root of context hierarchy
+2017-02-08 21:11:25.574  INFO 19088 --- [main] com.example.service.RestaurantService    : Total number of Dish: 100
+2017-02-08 21:11:25.574  INFO 19088 --- [main] com.example.service.RestaurantService    : OUTPUT satisfactionAmount: 2490901
+2017-02-08 21:11:25.574  INFO 19088 --- [main] com.example.service.RestaurantService    : INPUT totalTimeTakenForDish: 61
+2017-02-08 21:11:25.574  INFO 19088 --- [main] com.example.service.RestaurantService    : LIST OF SELECTED DISH : [[satisfactionAmount: 37336 ,timeTaken: 7 ,satisfaction: 5333.7144], [satisfactionAmount: 41595 ,timeTaken: 9 ,satisfaction: 4621.6665], [satisfactionAmount: 46043 ,timeTaken: 12 ,satisfaction: 3836.9167], [satisfactionAmount: 28636 ,timeTaken: 14 ,satisfaction: 2045.4286], [satisfactionAmount: 84493 ,timeTaken: 43 ,satisfaction: 1964.9535], [satisfactionAmount: 28550 ,timeTaken: 25 ,satisfaction: 1142.0], [satisfactionAmount: 97973 ,timeTaken: 99 ,satisfaction: 989.6263], [satisfactionAmount: 82189 ,timeTaken: 124 ,satisfaction: 662.8145], [satisfactionAmount: 80980 ,timeTaken: 150 ,satisfaction: 539.86664], [satisfactionAmount: 88125 ,timeTaken: 197 ,satisfaction: 447.33502], [satisfactionAmount: 97386 ,timeTaken: 218 ,satisfaction: 446.72476], [satisfactionAmount: 64441 ,timeTaken: 166 ,satisfaction: 388.1988], [satisfactionAmount: 48906 ,timeTaken: 127 ,satisfaction: 385.0866], [satisfactionAmount: 54439 ,timeTaken: 145 ,satisfaction: 375.44138], [satisfactionAmount: 83455 ,timeTaken: 224 ,satisfaction: 372.56696], [satisfactionAmount: 35239 ,timeTaken: 95 ,satisfaction: 370.93683], [satisfactionAmount: 54680 ,timeTaken: 153 ,satisfaction: 357.38562], [satisfactionAmount: 59746 ,timeTaken: 176 ,satisfaction: 339.4659], [satisfactionAmount: 93100 ,timeTaken: 279 ,satisfaction: 333.69174], [satisfactionAmount: 25229 ,timeTaken: 92 ,satisfaction: 274.22827], [satisfactionAmount: 97943 ,timeTaken: 366 ,satisfaction: 267.60382], [satisfactionAmount: 44304 ,timeTaken: 170 ,satisfaction: 260.61176], [satisfactionAmount: 99248 ,timeTaken: 386 ,satisfaction: 257.11917], [satisfactionAmount: 14739 ,timeTaken: 58 ,satisfaction: 254.1207], [satisfactionAmount: 24116 ,timeTaken: 95 ,satisfaction: 253.85263], [satisfactionAmount: 98143 ,timeTaken: 400 ,satisfaction: 245.3575], [satisfactionAmount: 46518 ,timeTaken: 196 ,satisfaction: 237.33673], [satisfactionAmount: 36551 ,timeTaken: 160 ,satisfaction: 228.44376], [satisfactionAmount: 35002 ,timeTaken: 154 ,satisfaction: 227.28572], [satisfactionAmount: 53636 ,timeTaken: 299 ,satisfaction: 179.38461], [satisfactionAmount: 95273 ,timeTaken: 540 ,satisfaction: 176.43149], [satisfactionAmount: 51817 ,timeTaken: 336 ,satisfaction: 154.21725], [satisfactionAmount: 49096 ,timeTaken: 320 ,satisfaction: 153.425], [satisfactionAmount: 75630 ,timeTaken: 502 ,satisfaction: 150.65736], [satisfactionAmount: 53178 ,timeTaken: 398 ,satisfaction: 133.61307], [satisfactionAmount: 78841 ,timeTaken: 613 ,satisfaction: 128.615], [satisfactionAmount: 85696 ,timeTaken: 713 ,satisfaction: 120.19074], [satisfactionAmount: 99098 ,timeTaken: 827 ,satisfaction: 119.82829], [satisfactionAmount: 61626 ,timeTaken: 535 ,satisfaction: 115.18878], [satisfactionAmount: 40195 ,timeTaken: 358 ,satisfaction: 112.276535], [satisfactionAmount: 17710 ,timeTaken: 158 ,satisfaction: 112.08861]]
+2017-02-08 21:11:25.574  INFO 19088 --- [main] c.e.SpringBootAssignmentApplicationTests : Started SpringBootAssignmentApplicationTests in 1.061 seconds (JVM running for 1.917)
+2017-02-08 21:11:25.622  INFO 19088 --- [main] com.example.service.RestaurantService    : Total number of Dish: 100
+2017-02-08 21:11:25.669  INFO 19088 --- [Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@59474f18: startup date [Wed Feb 08 21:11:25 IST 2017]; root of context hierarchy
