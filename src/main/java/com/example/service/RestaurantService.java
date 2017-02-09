@@ -45,7 +45,7 @@ public class RestaurantService {
 		Map<Object, Object> diskMap = getSortedDiskInMap(fileName);
 		int totalTimeForDish = (Integer) diskMap.get(TOTAL_TIME_FOR_DISH);
 		Set<Dish> sortedDisk = (TreeSet<Dish>) diskMap.get(SORTED_DISH);
-
+		log.info("INPUT totalTimeTakenForDish : " + totalTimeForDish);
 		List<Dish> satisfactionList = new ArrayList<>();
 		long satisfactionAmount = 0L;
 		for (Dish dish : sortedDisk) {
@@ -59,7 +59,7 @@ public class RestaurantService {
 		}
 
 		log.info("OUTPUT satisfactionAmount: " + satisfactionAmount);
-		log.info("INPUT totalTimeTakenForDish: " + totalTimeForDish);
+		log.info("Remaining timeTakenForDish: " + totalTimeForDish);
 		log.info("LIST OF SELECTED DISH : " + satisfactionList);
 	}
 
@@ -106,7 +106,7 @@ public class RestaurantService {
 					continue;
 				}
 			}
-			log.info("Total number of Dish: " + noOfDish);
+			log.info("INPUT Total number of Dish: " + noOfDish);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
